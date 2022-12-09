@@ -1,0 +1,502 @@
+:root{
+
+    --verde:rgb(77, 150, 168);
+    --morado:#855FB1;
+    --titulo:#28283D;
+    --grisazulado:rgb(135, 135, 157);
+    --azulclaro:#8FE3F9;
+    --moradoclaro:#d9b8ff;
+    --blanco: #fafafa;
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    --webkit-box-sizing: border-box;    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--blanco);
+    overflow-x: hidden;
+}
+
+img{
+    display: block;
+   
+   
+}
+
+.center-img{
+    border-radius: 10px;
+}
+
+h1{
+
+    font-family: 'Red Hat Display', sans-serif; 
+    
+    font-weight: 900;
+    color: var(--titulo);
+    text-align: center;
+
+}
+
+h2{
+    font-family: 'Red Hat Display', sans-serif;
+   
+    font-weight: 900;
+    line-height: 44px;
+    color: var(--titulo);
+    text-align: center;
+}
+
+p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color:var(--grisazulado);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.overline{
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color:var(--verde);
+    text-align: center;
+}
+
+
+
+
+
+.left, .right{
+    display:none;
+}
+
+/*HEADER*/
+
+.header{
+
+    margin-top: 3rem;
+   
+}
+
+.logo-img{
+    margin:0 auto 5rem;
+}
+.img-all{
+    width: 110%;
+    margin: 0 -1.1rem 5rem;
+    overflow:hidden; 
+    
+}
+
+
+.container{
+    width:90%;
+    margin: 0 auto;
+}
+
+.header-title{
+
+    font-size:40px;
+    line-height: 44px;
+    margin-bottom: 2rem;
+}
+
+.header-paragraph{
+    max-width: 457px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 3rem;
+    padding:0.45rem;
+    
+}
+
+.button1 ,.button2{
+    display:block;
+    width:max-content;
+    padding:1rem 2.8rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    line-height: 26px;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:500;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+   
+
+}
+.button1{
+    color:var(--blanco);
+    background-color: var(--verde);
+
+}
+
+.button2{
+
+    background-color: var(--morado);
+    color:var(--blanco);
+     padding:1rem 2.1rem;
+    
+}
+
+.button3{
+
+  
+    padding:1rem 2.8rem;
+    
+}
+
+.button1:hover, .button2:hover{
+
+    opacity:70%;
+     
+ }
+
+
+.modif-button{
+    color:var(--azulclaro);
+    font-weight: 900;
+}
+
+.modif-button2{
+    color:var(--moradoclaro);
+    font-weight: 900;
+}
+
+.raya{
+    margin-top: 4rem;;
+    height:84px;
+    width:50%;
+    border-right: 0.1rem solid rgba(135, 135, 157,0.2);
+   
+}
+
+.number{
+    width: 40px;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 100%;
+    border: 0.1rem solid rgba(135, 135, 157,0.2);
+    padding:0.5rem;
+    color:var(--grisazulado);
+    background-color: var(--blanco);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: small;
+}
+
+/*MAIN*/
+
+.tira-img{
+    width:100%;
+    border-radius: 10px;
+}
+
+.tira-fotos{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: 1fr 1fr;
+    margin:5rem 0;
+    
+}
+
+.main-title{
+   max-width: 445px;
+   margin: 0 auto;
+    font-size:32px;
+    line-height: 36px;
+    margin-bottom: 1.5rem;
+    margin-top:2rem;
+    padding: 0 1rem;
+}
+
+.main-paragraph{
+    margin:0 auto;
+    font-size: 1rem;
+    line-height: 26px;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+    max-width: 573px;
+    
+
+}
+
+/*footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(starter-code/assets/mobile/image-footer.jpg);
+    background-color: var(--verde);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: space-around;
+    gap:2.5rem;
+    padding-bottom:3rem;
+    background-blend-mode:soft-light;
+    
+    
+
+}
+
+.footer-title{
+    max-width: 457px;
+    margin:0 auto;
+    color:var(--blanco);
+    font-size: 32px;
+    margin-top: 5rem;
+    line-height: 36px;
+    
+  
+}
+
+.footer-paragraph{
+    width:90%;
+    margin:0 auto;
+    color:var(--blanco);
+    font-weight:500;
+    font-size:18px;
+    line-height: 26px;
+    padding:0.5rem;
+    max-width: 573px;
+   
+}
+
+
+
+.number2{
+  
+    margin-bottom: -1.2rem;
+    position:relative;
+ 
+    z-index: 2;
+ 
+}
+
+
+@media(min-width: 768px){
+
+    .main-title{
+        
+         font-size:40px;
+         line-height: 44px;
+        
+     }
+
+     .header-title{
+
+        font-size:48px;
+        line-height: 48px;
+       
+    }
+    
+    .footer-title{
+      
+        font-size: 40px;
+        line-height: 44px;
+        
+      
+    }
+
+    .footer{
+      
+        background-image: url(starter-code/assets/tablet/image-footer.jpg);
+    
+    }
+
+
+    .tira-fotos{
+       
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        
+    }
+    
+}
+
+@media(min-width: 1024px){
+
+
+.all{
+    display:none;
+    }
+
+    .left, .right{
+        display:contents;
+        
+
+    }
+
+    .img-left, .img-right{
+
+        width:60%;
+       
+    }
+
+    .img-left{
+
+        padding-right:2rem;
+
+    }
+
+
+    .img-right{
+
+       
+        margin-top: 3rem;
+
+    }
+.grid-header{
+
+    display:flex;
+    justify-content: space-between;
+    align-items:start;    
+    gap:2rem;
+    width: 105%;
+    margin-left :-26px;
+    margin-right: -26px;
+}
+
+.header-texts{
+    
+    align-self: end;
+    margin-top:3rem;
+}
+
+.butons{
+    display:flex;
+    justify-content: center;
+    gap:1rem
+  
+}
+.button1, .button2{
+    margin:0;
+    margin-top:-1rem;
+    
+}
+
+.header-title{
+        
+    font-size:64px;
+    line-height: 64px;
+    margin-bottom: 1rem;
+   
+}
+
+.header-paragraph{
+        
+    font-size:18px;
+    line-height: 26px;
+   max-width: 540px;
+}
+
+.raya{
+
+    margin-top: 8rem;
+}
+
+.number{
+    width:60px;
+    height:60px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 26px;
+    padding-top:1rem;
+    
+}
+
+.tira-fotos{
+
+    max-width: 1110px;
+    margin:4rem auto;
+}
+
+.main-paragraph{
+    max-width: 540px;
+    font-size: 18px;
+    margin-top: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+
+.raya1, .number2{
+    display:none;
+}
+
+.overline{
+    margin-top: 6rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-title{
+    margin-top: 1rem;
+}
+.footer{
+    margin-top: 10rem;
+}
+
+.logo{
+    padding-top: 2rem;
+}
+
+
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    background-image: url(starter-code/assets/desktop/image-footer.jpg);
+    height:308px;
+    margin:0 auto;
+    justify-content: space-around;
+    align-items: center;
+    gap:2rem;
+    margin-top: ;
+   
+}
+
+.footer-title{
+    font-size: 40px;
+    line-height: 44px;
+    margin:0;
+    text-align: left;
+    padding: 0;
+    margin-left: 5rem;
+    max-width:350px;
+
+}
+
+.footer-paragraph{
+    max-width:350px ;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.button3{
+    margin: 0;
+    margin-right:5rem;
+
+}
+
+}
